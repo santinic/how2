@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "google": "^1.4.0",
+    "lodash": "^4.3.0",
+    "marked-terminal": "^1.6.1",
+    "stackexchange": "^0.3.0"
+  }
+}
