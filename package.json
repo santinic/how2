@@ -1,9 +1,42 @@
 {
+  "name": "howto",
+  "author": "Claudio Santini",
+  "version": "1.0.0",
+  "description": "Uses Google and Stackoverflow to find how to do things",
+  "licence": "NON-MILITARY-SOCIALIST-LICENCE V1",
+  "keywords": [
+    "howto",
+    "man",
+    "google",
+    "stackoverflow",
+    "stackexchange"
+  ],
+  "tags": [
+    "howto",
+    "man",
+    "google",
+    "stackoverflow",
+    "stackexchange"
+  ],
+  "homepage": "https://github.com/santinic/howto",
+  "preferGlobal": true,
+  "main": "./index.js",
+  "bin": {
+    "howto": "./bin/howto"
+  },
+  "scripts": {
+    "start": "./bin/howto concatenate two files"
+  },
   "dependencies": {
     "blessed": "^0.1.81",
+    "colors": "^1.1.2",
+    "ent": "^2.2.0",
     "google": "^1.4.0",
     "lodash": "^4.3.0",
     "marked-terminal": "^1.6.1",
-    "stackexchange": "^0.3.0"
+    "scanf": "^0.7.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
   }
 }
