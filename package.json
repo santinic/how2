@@ -1,31 +1,37 @@
 {
-  "name": "howto",
-  "author": "Claudio Santini",
+  "name": "how2",
+  "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
   "version": "1.0.0",
-  "description": "Uses Google and Stackoverflow to find how to do things",
-  "licence": "NON-MILITARY-SOCIALIST-LICENCE V1",
+  "description": "Uses Google and Stackoverflow to find how to do things on a Unix commmand line",
+  "licence": "NON-MILITARY SOCIALIST LICENCE VERSION 1",
   "keywords": [
+    "how2",
     "howto",
     "man",
     "google",
     "stackoverflow",
-    "stackexchange"
+    "stack overflow",
+    "stackexchange",
+    "stack exchange"
   ],
   "tags": [
+    "how2",
     "howto",
     "man",
     "google",
     "stackoverflow",
-    "stackexchange"
+    "stack overflow",
+    "stackexchange",
+    "stack exchange"
   ],
   "homepage": "https://github.com/santinic/howto",
   "preferGlobal": true,
   "main": "./index.js",
   "bin": {
-    "howto": "./bin/howto"
+    "howto": "./bin/how2"
   },
   "scripts": {
-    "start": "./bin/howto concatenate two files"
+    "start": "./bin/how2 concatenate two files"
   },
   "dependencies": {
     "blessed": "^0.1.81",
