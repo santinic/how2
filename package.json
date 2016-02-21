@@ -47,13 +47,11 @@
     "marked-terminal": "^1.6.1",
     "scanf": "^0.7.0",
     "yargs": "^4.1.0",
+    "marked": "^0.3.3",
     "nconf": "0.6.x",
     "request": "2.21.x",
     "devnull": "0.0.x",
-    "utile": "0.2.x"
-  },
-  "peerDependencies": {
-    "marked": "^0.3.3"
+    "utile": "0.2.x",
   },
   "devDependencies": {
     "mocha": "^2.4.5"
