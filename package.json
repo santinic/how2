@@ -1,7 +1,7 @@
 {
   "name": "how2",
   "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Uses Google and Stackoverflow to find how to do things on a Unix commmand line",
   "license": "NON-MILITARY SOCIALIST LICENCE VERSION 1",
   "repository": {
@@ -40,18 +40,18 @@
   "dependencies": {
     "blessed": "^0.1.81",
     "colors": "^1.1.2",
+    "devnull": "0.0.12",
     "ent": "^2.2.0",
     "google": "^1.4.0",
     "keypress": "^0.2.1",
     "lodash": "^4.3.0",
-    "marked-terminal": "^1.6.1",
-    "scanf": "^0.7.0",
-    "yargs": "^4.1.0",
     "marked": "^0.3.3",
-    "nconf": "0.6.x",
-    "request": "2.21.x",
-    "devnull": "0.0.x",
-    "utile": "0.2.x",
+    "marked-terminal": "^1.6.1",
+    "nconf": "^0.8.4",
+    "request": "^2.69.0",
+    "scanf": "^0.7.0",
+    "utile": "^0.3.0",
+    "yargs": "^4.1.0"
   },
   "devDependencies": {
     "mocha": "^2.4.5"
