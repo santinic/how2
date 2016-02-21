@@ -9,11 +9,14 @@ It's like `man`, but you can query it in natural language:
 
 
 ## Install
-To install, run this command:
+You can install it via npm:
 
 `npm install -g how2`
 
-If you don't have npm, then [just install NodeJS](https://nodejs.org), it takes two seconds.
+#### If you don't have npm:
+Then [just install NodeJS](https://nodejs.org):
+- On Ubuntu try with ```sudo apt-get install nodejs npm```
+- On Mac ```brew install nodejs```
 
 
 ## Usage
