@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "description": "Uses Google and Stackoverflow to find how to do things on a Unix commmand line",
   "licence": "NON-MILITARY SOCIALIST LICENCE VERSION 1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:santinic/how2.git"
+  },
   "keywords": [
     "how2",
     "howto",
