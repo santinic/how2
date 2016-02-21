@@ -1,4 +1,4 @@
-# how2
+# how2: stackoverflow from the terminal
 
 ![Demo of using how2](https://raw.githubusercontent.com/santinic/how2/master/img/demo.gif)
 
