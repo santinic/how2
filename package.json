@@ -1,7 +1,7 @@
 {
   "name": "how2",
   "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Uses Google and Stackoverflow to find how to do things on a Unix commmand line",
   "license": "NON-MILITARY SOCIALIST LICENCE VERSION 1",
   "repository": {
@@ -28,11 +28,11 @@
     "stackexchange",
     "stack exchange"
   ],
-  "homepage": "https://github.com/santinic/howto",
+  "homepage": "https://github.com/santinic/how2",
   "preferGlobal": true,
   "main": "./index.js",
   "bin": {
-    "howto": "./bin/how2"
+    "how2": "./bin/how2"
   },
   "scripts": {
     "start": "./bin/how2 concatenate two files"
