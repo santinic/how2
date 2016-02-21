@@ -2,7 +2,7 @@
 
 ![Demo of using how2](https://raw.githubusercontent.com/santinic/how2/master/img/demo.gif)
 
-how2 finds the simplest way to do something on a unix bash command line.
+how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language:
 
 ```$ how2 read file while is changing```
