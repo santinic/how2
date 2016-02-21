@@ -38,6 +38,7 @@
     "colors": "^1.1.2",
     "ent": "^2.2.0",
     "google": "^1.4.0",
+    "keypress": "^0.2.1",
     "lodash": "^4.3.0",
     "marked-terminal": "^1.6.1",
     "scanf": "^0.7.0"
