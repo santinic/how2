@@ -33,7 +33,7 @@
   "main": "./index.js",
   "bin": {
     "how2": "./bin/how2",
-    "how": "./bin/how"
+    "how": "./bin/how2"
   },
   "scripts": {
     "start": "./bin/how2 concatenate two files"
