@@ -1,4 +1,4 @@
-var assert = require('assert');
+var assert = require('chai').assert;
 var fun = require('../lib/utils').stripStackOverflow;
 
 describe('stripStackOverflow', function() {
