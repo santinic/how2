@@ -34,9 +34,8 @@ After that you can press SPACE to go to the interactive mode, where you can choo
 
 With ```-l``` you can also find answers for other languages:
 
-```
-$ how2 -l python permutations of a list
-```
+![-l python](https://raw.githubusercontent.com/santinic/how2/master/img/python.png)
+
 
 ## How does it work ?
 It uses Google and Stackoverflow APIs, because Stackoverflow search on its own doesn't
