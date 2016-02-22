@@ -1,11 +1,9 @@
 # how2: stackoverflow from the terminal
 
-![Demo of using how2](https://raw.githubusercontent.com/santinic/how2/master/img/demo.gif)
-
 how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language:
 
-```$ how2 read file while is changing```
+![Demo of using how2](https://raw.githubusercontent.com/santinic/how2/master/img/demo.gif)
 
 
 ## Install
@@ -28,6 +26,9 @@ how2 tries to give you immediately the most likely answer:
 After that you can press SPACE to go to the interactive mode, where you can choose a different stackoverflow question/answer.
 
 ![how2 interactive mode](https://raw.githubusercontent.com/santinic/how2/master/img/interactive.png)
+
+![how2 interactive mode 2](https://raw.githubusercontent.com/santinic/how2/master/img/interactive2.png)
+
 
 With ```-l``` you can also find answers for other languages:
 
