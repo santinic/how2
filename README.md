@@ -15,8 +15,8 @@ if it gives you EACCES errors, [you need to fix npm permissions](https://docs.np
 
 #### If you don't have npm:
 Then [just install NodeJS](https://nodejs.org):
-- On Ubuntu try with ```sudo apt-get install nodejs npm```
-- On Mac ```brew install node```
+- On Ubuntu try with `sudo apt-get install nodejs npm`
+- On Mac `brew install node`
 
 
 ## Usage
@@ -32,7 +32,7 @@ After that you can press SPACE to go to the interactive mode, where you can choo
 ![how2 interactive mode 2](https://raw.githubusercontent.com/santinic/how2/master/img/interactive2.png)
 
 
-You can use ```-l lang``` to find answers for other languages:
+You can use `-l lang` to find answers for other languages:
 
 ![-l python](https://raw.githubusercontent.com/santinic/how2/master/img/python.png)
 
