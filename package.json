@@ -1,7 +1,7 @@
 {
   "name": "how2",
   "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Uses Google and Stackoverflow to find how to do things on a Unix commmand line",
   "license": "NON-MILITARY SOCIALIST LICENCE VERSION 1",
   "repository": {
