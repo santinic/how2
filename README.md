@@ -32,11 +32,10 @@ After that you can press SPACE to go to the interactive mode, where you can choo
 ![how2 interactive mode 2](https://raw.githubusercontent.com/santinic/how2/master/img/interactive2.png)
 
 
-With ```-l``` you can also find answers for other languages:
+You can use ```-l lang``` to find answers for other languages:
 
-```
-$ how2 -l python permutations of a list
-```
+![-l python](https://raw.githubusercontent.com/santinic/how2/master/img/python.png)
+
 
 ## How does it work ?
 It uses Google and Stackoverflow APIs, because Stackoverflow search on its own doesn't
