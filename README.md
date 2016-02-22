@@ -37,12 +37,12 @@ You can use ```-l lang``` to find answers for other languages:
 ![-l python](https://raw.githubusercontent.com/santinic/how2/master/img/python.png)
 
 
-## How does it work ?
+## How does it work?
 It uses Google and Stackoverflow APIs, because Stackoverflow search on its own doesn't
 works as well.
 
 
-## Why ?
+## Why?
 Because I can never remember how to do certain things. And reading man pages always takes too long.
 
 ![XKCD](http://imgs.xkcd.com/comics/tar.png)
