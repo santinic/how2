@@ -32,7 +32,7 @@ After that you can press SPACE to go to the interactive mode, where you can choo
 ![how2 interactive mode 2](https://raw.githubusercontent.com/santinic/how2/master/img/interactive2.png)
 
 
-With ```-l``` you can also find answers for other languages:
+You can use ```-l lang``` to find answers for other languages:
 
 ![-l python](https://raw.githubusercontent.com/santinic/how2/master/img/python.png)
 
