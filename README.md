@@ -47,6 +47,8 @@ Because I can never remember how to do certain things. And reading man pages alw
 
 ![XKCD](http://imgs.xkcd.com/comics/tar.png)
 
+Taken from https://xkcd.com/1168/
+
 
 ## TODO
 * Add automatic copy/paste from -i to command line
