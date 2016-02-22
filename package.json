@@ -48,6 +48,7 @@
     "marked": "^0.3.3",
     "marked-terminal": "^1.6.1",
     "nconf": "^0.8.4",
+    "npm-latest": "^1.0.1",
     "request": "^2.69.0",
     "scanf": "^0.7.0",
     "utile": "^0.3.0",
