@@ -11,6 +11,8 @@ You can install it via npm:
 
 `npm install -g how2`
 
+if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care.
+
 #### If you don't have npm:
 Then [just install NodeJS](https://nodejs.org):
 - On Ubuntu try with ```sudo apt-get install nodejs npm```
