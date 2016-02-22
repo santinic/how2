@@ -16,19 +16,27 @@ You can install it via npm:
 #### If you don't have npm:
 Then [just install NodeJS](https://nodejs.org):
 - On Ubuntu try with ```sudo apt-get install nodejs npm```
-- On Mac ```brew install nodejs```
+- On Mac ```brew install node```
 
 
 ## Usage
 If you don't specify a language **it defaults to Bash** unix command line.
-To specify a language, use ```-l```
+how2 tries to give you immediately the most likely answer:
+
+![how2 unzip bz2](https://raw.githubusercontent.com/santinic/how2/master/img/bz2.png)
+
+After that you can press SPACE to go to the interactive mode, where you can choose a different stackoverflow question/answer.
+
+![how2 interactive mode](https://raw.githubusercontent.com/santinic/how2/master/img/interactive.png)
+
+With ```-l``` you can also find answers for other languages:
 
 ```
 $ how2 -l python permutations of a list
 ```
 
 ## How does it work ?
-Uses Google and Stackoverflow APIs, because Stackoverflow search on its own doesn't
+It uses Google and Stackoverflow APIs, because Stackoverflow search on its own doesn't
 works as well.
 
 
