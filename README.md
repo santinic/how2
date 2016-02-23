@@ -13,11 +13,28 @@ You can install it via npm:
 
 if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care.
 
-#### If you don't have npm:
-Then [just install NodeJS](https://nodejs.org):
-- On Ubuntu try with ```sudo apt-get install nodejs npm```
-- On Mac ```brew install node```
+#### If you don't have npm
+Then [just install NodeJS](https://nodejs.org).
 
+#### On Ubuntu 
+Install node: `sudo apt-get install nodejs npm`
+
+Make a symlink: `ln -s /usr/bin/nodejs /usr/bin/node`
+
+Then install how2: `npm install -g how2`
+
+#### On Mac 
+Install node with brew: `brew install node`.
+
+If you don't have brew, [download nodejs from here](https://nodejs.org)
+
+Then install how2: `npm install -g how2`
+
+#### If you get "/usr/bin/env: node: No such file or directory"
+Your Linux distro (like Ubuntu) probably uses "nodejs" instead of "node". 
+
+Make a symlink and it should work:
+```ln -s /usr/bin/nodejs /usr/bin/node```
 
 ## Usage
 If you don't specify a language **it defaults to Bash** unix command line.
@@ -32,20 +49,22 @@ After that you can press SPACE to go to the interactive mode, where you can choo
 ![how2 interactive mode 2](https://raw.githubusercontent.com/santinic/how2/master/img/interactive2.png)
 
 
-You can use ```-l lang``` to find answers for other languages:
+You can use `-l lang` to find answers for other languages:
 
 ![-l python](https://raw.githubusercontent.com/santinic/how2/master/img/python.png)
 
 
-## How does it work ?
+## How does it work?
 It uses Google and Stackoverflow APIs, because Stackoverflow search on its own doesn't
 works as well.
 
 
-## Why ?
+## Why?
 Because I can never remember how to do certain things. And reading man pages always takes too long.
 
 ![XKCD](http://imgs.xkcd.com/comics/tar.png)
+
+Taken from https://xkcd.com/1168/
 
 
 ## TODO
