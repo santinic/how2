@@ -35,6 +35,7 @@
     "how2": "./bin/how2"
   },
   "scripts": {
+    "test": "mocha test",
     "start": "./bin/how2 concatenate two files"
   },
   "dependencies": {
