@@ -31,7 +31,8 @@ If you don't have brew, [download nodejs from here](https://nodejs.org)
 Then install how2: `npm install -g how2`
 
 #### If you get "/usr/bin/env: node: No such file or directory"
-Your Linux distro (like Ubuntu) uses "nodejs" probably instead of "node". 
+Your Linux distro (like Ubuntu) probably uses "nodejs" instead of "node". 
+
 Make a symlink and it should work:
 ```ln -s /usr/bin/nodejs /usr/bin/node```
 
