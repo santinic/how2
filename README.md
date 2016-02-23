@@ -13,11 +13,27 @@ You can install it via npm:
 
 if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care.
 
-#### If you don't have npm:
-Then [just install NodeJS](https://nodejs.org):
-- On Ubuntu try with `sudo apt-get install nodejs npm`
-- On Mac `brew install node`
+#### If you don't have npm
+Then [just install NodeJS](https://nodejs.org).
 
+#### On Ubuntu 
+Install node: `sudo apt-get install nodejs npm`
+
+Make a symlink: `ln -s /usr/bin/nodejs /usr/bin/node`
+
+Then install how2: `npm install -g how2`
+
+#### On Mac 
+Install node with brew: `brew install node`.
+
+If you don't have brew, [download nodejs from here](https://nodejs.org)
+
+Then install how2: `npm install -g how2`
+
+#### If you get "/usr/bin/env: node: No such file or directory"
+Your Linux distro (like Ubuntu) uses "nodejs" probably instead of "node". 
+Make a symlink and it should work:
+```ln -s /usr/bin/nodejs /usr/bin/node```
 
 ## Usage
 If you don't specify a language **it defaults to Bash** unix command line.
