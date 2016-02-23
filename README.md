@@ -53,6 +53,12 @@ You can use `-l lang` to find answers for other languages:
 
 ![-l python](https://raw.githubusercontent.com/santinic/how2/master/img/python.png)
 
+## Can i use it behind Proxy ?
+Yes, you need to use `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
+
+For example, you could alias the proxy seetings in your `~/.bash_profile`:
+
+`alias how2="HTTPS_PROXY='your_proxy:8888' how2"`
 
 ## How does it work?
 It uses Google and Stackoverflow APIs, because Stackoverflow search on its own doesn't
