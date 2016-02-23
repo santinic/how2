@@ -52,6 +52,7 @@
     "openurl": "^1.1.1",
     "request": "^2.69.0",
     "scanf": "^0.7.0",
+    "simple-spinner": "0.0.5",
     "utile": "^0.3.0",
     "yargs": "^4.1.0"
   },
