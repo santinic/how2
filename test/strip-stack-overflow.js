@@ -3,7 +3,7 @@ var fun = require('../lib/utils').stripStackOverflow;
 
 describe('stripStackOverflow', function() {
     it('should not strip -f parameters in the title', function () {
-        var title = `monitoring - How does the "tail" command's "-f" parameter ...`;
+        var title = 'monitoring - How does the "tail" command\'s "-f" parameter ...';
         assert.equal(fun(title), title);
     });
     it('should strip Unix & Linux Stack Exchange', function() {
