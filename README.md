@@ -1,5 +1,9 @@
 # how2: stackoverflow from the terminal
 
+[![NPM Version](https://img.shields.io/npm/v/how2.svg?style=flat)](https://npmjs.org/package/how2)
+[![Dependency Status](https://david-dm.org/santinic/how2.svg)](https://david-dm.org/santinic/how2)
+[![devDependency Status](https://david-dm.org/santinic/how2/dev-status.svg)](https://david-dm.org/santinic/how2#info=devDependencies)
+
 how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language:
 
