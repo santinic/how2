@@ -76,6 +76,22 @@ Because I can never remember how to do certain things. And reading man pages alw
 
 Taken from https://xkcd.com/1168/
 
+## ZSH Aliases
+For ZSH users I created a few awesome aliases just put them in your .zshrc file.
+
+```
+# how2 StackExchange search
+alias how="how2 $*"
+alias howwp="how2 -l wordpress $*"
+alias howphp="how2 -l php $*"
+
+# Usage: how lang then question
+# E.g. how php create array in OOP
+# $1 is agrument 1
+# ${@:2} is everything from argument 2 to end
+alias howl="how2 -l $1 ${@:2}"
+
+```
 
 ## TODO
 * Add automatic copy/paste from -i to command line
