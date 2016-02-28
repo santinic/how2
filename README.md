@@ -79,7 +79,7 @@ Taken from https://xkcd.com/1168/
 ## ZSH Aliases
 For ZSH users I created a few awesome aliases just put them in your .zshrc file.
 
-```bash
+``` bash
 # how2 StackExchange search
 alias how="how2 $*"
 alias howwp="how2 -l wordpress $*"
