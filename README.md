@@ -86,7 +86,7 @@ alias howwp="how2 -l wordpress $*"
 alias howphp="how2 -l php $*"
 
 # Usage: how lang then question
-# E.g. how php create array in OOP
+# E.g. howl php create array in OOP
 # $1 is agrument 1
 # ${@:2} is everything from argument 2 to end
 alias howl="how2 -l $1 ${@:2}"
