@@ -57,6 +57,13 @@ You can use `-l lang` to find answers for other languages:
 
 ![-l python](https://raw.githubusercontent.com/santinic/how2/master/img/python.png)
 
+## Copy-Paste with mouse
+When you are in "interactive mode" (after you press SPACE), if you want to copy-paste more than one line you can use block-select:
+
+**With Ubuntu try holding `Ctrl+Alt` before you select, or `Alt+Cmd` if you're in iTerm on Mac.**
+
+(thanks to @danielkop for this suggestion).
+
 ## Can i use it behind Proxy ?
 Yes, you need to use `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
 
