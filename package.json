@@ -3,7 +3,7 @@
   "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
   "version": "1.0.9",
   "description": "Uses Google and Stackoverflow to find how to do things on a Unix commmand line",
-  "license": "NON-MILITARY SOCIALIST LICENCE VERSION 1",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:santinic/how2.git"
