@@ -1,0 +1,15 @@
+.l-title {
+  padding-right: 25px;
+}
+
+.l-title,
+.l-title:active,
+.l-title:hover,
+.l-title:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 1000px;
+}

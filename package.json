@@ -36,6 +36,9 @@
   },
   "scripts": {
     "test": "mocha test",
+    "docs": "easystatic start docs",
+    "docs:build": "easystatic build docs",
+    "docs:deploy": "easystatic deploy docs --repo=santinic/how2",
     "start": "./bin/how2 concatenate two files"
   },
   "dependencies": {
