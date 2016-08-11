@@ -20,14 +20,14 @@ if it gives you EACCES errors, [you need to fix npm permissions](https://docs.np
 #### If you don't have npm
 Then [just install NodeJS](https://nodejs.org).
 
-#### On Ubuntu 
+#### On Ubuntu
 Install node: `sudo apt-get install nodejs npm`
 
 Make a symlink: `ln -s /usr/bin/nodejs /usr/bin/node`
 
 Then install how2: `npm install -g how2`
 
-#### On Mac 
+#### On Mac
 Install node with brew: `brew install node`.
 
 If you don't have brew, [download nodejs from here](https://nodejs.org)
@@ -35,7 +35,7 @@ If you don't have brew, [download nodejs from here](https://nodejs.org)
 Then install how2: `npm install -g how2`
 
 #### If you get "/usr/bin/env: node: No such file or directory"
-Your Linux distro (like Ubuntu) probably uses "nodejs" instead of "node". 
+Your Linux distro (like Ubuntu) probably uses "nodejs" instead of "node".
 
 Make a symlink and it should work:
 ```ln -s /usr/bin/nodejs /usr/bin/node```
@@ -70,6 +70,15 @@ Yes, you need to use `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
 For example, you could alias the proxy seetings in your `~/.bash_profile`:
 
 `alias how2="HTTPS_PROXY='your_proxy:8888' how2"`
+
+## Using http or https protocols
+To use http or https protocols just set the `PROTOCOL` environment variable. This variable can be set to either `http` or `https`. If it is not set or set to something other then `http` or `https` it will be set to the default of `https`.
+
+For example, executing `PROTOCOL='http' how2` will use a http protocol where as executing `PROTOCOL='https' how2` will use the https protocol instead.
+
+This can also be aliased in your `~/.bash_profile`:
+
+`alias how2="PROTOCOL='http' how2"`
 
 ## How does it work?
 It uses Google and Stackoverflow APIs, because Stackoverflow search on its own doesn't
