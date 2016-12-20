@@ -1,1 +1,3 @@
-node --no-deprecation -e "require('../lib/index')"
+#!/usr/bin/env node
+
+require('../lib/index');
