@@ -41,7 +41,7 @@
   "dependencies": {
     "blessed": "^0.1.81",
     "colors": "^1.1.2",
-    "devnull": "0.0.12",
+    "devnull": "git+https://github.com/observing/devnull.git#ff99281602feca0cf3bdf0e6d36fedbf1b566523",
     "ent": "^2.2.0",
     "google": "^1.4.0",
     "keypress": "^0.2.1",
