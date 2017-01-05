@@ -13,7 +13,7 @@ It's like `man`, but you can query it in natural language:
 ## Install
 You can install it via npm:
 
-`npm install -g how2`
+`sudo npm install -g how2`
 
 if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care.
 
