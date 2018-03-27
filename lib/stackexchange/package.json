@@ -13,7 +13,7 @@
   "dependencies": {
     "nconf": "0.6.x",
     "request": "2.21.x",
-    "devnull": "0.0.x",
+    "devnull2": "0.0.x",
     "utile": "0.2.x"
   },
   "devDependencies": {

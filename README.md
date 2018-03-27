@@ -1,8 +1,6 @@
 # how2: stackoverflow from the terminal
 
-[![NPM Version](https://img.shields.io/npm/v/how2.svg?style=flat)](https://npmjs.org/package/how2)
-[![Dependency Status](https://david-dm.org/santinic/how2.svg)](https://david-dm.org/santinic/how2)
-[![devDependency Status](https://david-dm.org/santinic/how2/dev-status.svg)](https://david-dm.org/santinic/how2#info=devDependencies)
+[![NPM Version](https://nodei.co/npm/how2.png?downloads=true)](https://npmjs.org/package/how2)
 
 how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language:
@@ -16,29 +14,6 @@ You can install it via npm:
 `npm install -g how2`
 
 if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care.
-
-#### If you don't have npm
-Then [just install NodeJS](https://nodejs.org).
-
-#### On Ubuntu 
-Install node: `sudo apt-get install nodejs npm`
-
-Make a symlink: `ln -s /usr/bin/nodejs /usr/bin/node`
-
-Then install how2: `npm install -g how2`
-
-#### On Mac 
-Install node with brew: `brew install node`.
-
-If you don't have brew, [download nodejs from here](https://nodejs.org)
-
-Then install how2: `npm install -g how2`
-
-#### If you get "/usr/bin/env: node: No such file or directory"
-Your Linux distro (like Ubuntu) probably uses "nodejs" instead of "node". 
-
-Make a symlink and it should work:
-```ln -s /usr/bin/nodejs /usr/bin/node```
 
 ## Usage
 If you don't specify a language **it defaults to Bash** unix command line.
@@ -82,7 +57,3 @@ Because I can never remember how to do certain things. And reading man pages alw
 ![XKCD](http://imgs.xkcd.com/comics/tar.png)
 
 Taken from https://xkcd.com/1168/
-
-
-## TODO
-* Add automatic copy/paste from -i to command line

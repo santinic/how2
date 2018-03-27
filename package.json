@@ -1,13 +1,19 @@
 {
   "name": "how2",
   "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Uses Google and Stackoverflow to find how to do things on a Unix commmand line",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:santinic/how2.git"
   },
+  "contributors": [
+    {
+      "name": "Paolo Cifariello",
+      "email": "paolocifa@gmail.com"
+    }
+  ],
   "keywords": [
     "how2",
     "howto",
@@ -28,7 +34,7 @@
     "stackexchange",
     "stack exchange"
   ],
-  "homepage": "https://github.com/santinic/how2",
+  "homepage": "https://github.com/santinic/how2/",
   "preferGlobal": true,
   "main": "./index.js",
   "bin": {
@@ -41,12 +47,11 @@
   "dependencies": {
     "blessed": "^0.1.81",
     "colors": "^1.1.2",
-    "devnull": "0.0.12",
     "ent": "^2.2.0",
     "google": "^1.4.0",
     "keypress": "^0.2.1",
     "lodash": "^4.3.0",
-    "marked": "0.3.5",
+    "marked": "0.3.12",
     "marked-terminal": "^1.6.1",
     "nconf": "^0.8.4",
     "npm-latest": "^1.0.1",
@@ -54,6 +59,7 @@
     "request": "^2.69.0",
     "semver": "5.1.0",
     "simple-spinner": "0.0.5",
+    "winston": "^2.4.0",
     "yargs": "^4.1.0"
   },
   "devDependencies": {
