@@ -1,6 +1,6 @@
 # how2: stackoverflow from the terminal
 
-[![NPM Version](https://nodei.co/npm/how2.png?downloads=true)](https://npmjs.org/package/how2)
+[![NPM Version](https://nodei.co/npm/how-2.png?downloads=true)](https://npmjs.org/package/how-2)
 
 how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language:
