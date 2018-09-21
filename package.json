@@ -50,20 +50,20 @@
     "ent": "^2.2.0",
     "google": "^1.4.0",
     "keypress": "^0.2.1",
-    "lodash": "^4.3.0",
+    "lodash": "^4.17.11",
     "marked": "0.3.12",
     "marked-terminal": "^1.6.1",
     "nconf": "^0.8.4",
     "npm-latest": "^1.0.1",
     "openurl": "^1.1.1",
-    "request": "^2.69.0",
+    "request": "^2.88.0",
     "semver": "5.1.0",
     "simple-spinner": "0.0.5",
-    "winston": "^2.4.0",
+    "winston": "^3.1.0",
     "yargs": "^4.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "mocha": "^5.2.0"
   }
 }
