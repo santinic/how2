@@ -38,7 +38,7 @@
   "preferGlobal": true,
   "main": "./index.js",
   "bin": {
-    "how2": "./bin/how2"
+    "how2": "bin/how2"
   },
   "scripts": {
     "test": "mocha test",
