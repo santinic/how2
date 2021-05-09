@@ -42,7 +42,7 @@ When you are in "interactive mode" (after you press SPACE), if you want to copy-
 ## Can i use it behind Proxy ?
 Yes, you need to use `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
 
-For example, you could alias the proxy seetings in your `~/.bash_profile`:
+For example, you could alias the proxy settings in your `~/.bash_profile`:
 
 `alias how2="HTTPS_PROXY='your_proxy:8888' how2"`
 
