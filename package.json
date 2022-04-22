@@ -54,7 +54,7 @@
     "lodash": "^4.17.15",
     "marked": "^0.7.0",
     "marked-terminal": "^1.6.1",
-    "nconf": "^0.8.4",
+    "nconf": "^0.11.4",
     "npm-latest": "^1.0.1",
     "openurl": "^1.1.1",
     "request": "^2.88.0",
