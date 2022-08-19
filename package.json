@@ -2,7 +2,7 @@
   "name": "how-2",
   "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
   "version": "1.8.2",
-  "description": "Uses Google and Stackoverflow to find how to do things on a Unix commmand line",
+  "description": "Uses Google and Stackoverflow to find how to do things on a Unix command line",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -42,29 +42,61 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "./bin/how2 concatenate two files"
+    "start": "./bin/how2 concatenate two files",
+    "lint": " eslint --fix ."
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "blessed": "^0.1.81",
-    "colors": "^1.1.2",
+    "colors": "^1.4.0",
     "ent": "^2.2.0",
-    "google-it": "^1.6.2",
+    "google-it": "^1.6.3",
     "keypress": "^0.2.1",
     "lodash": "^4.17.21",
-    "marked": "^0.7.0",
+    "marked": "^4.0.18",
     "marked-terminal": "^1.6.1",
-    "nconf": "^0.8.4",
+    "nconf": "^0.12.0",
     "npm-latest": "^1.0.1",
     "openurl": "^1.1.1",
-    "request": "^2.88.0",
+    "request": "^2.88.2",
     "semver": "5.1.0",
     "simple-spinner": "0.0.5",
-    "winston": "^3.1.0",
+    "winston": "^3.8.1",
     "yargs": "^16.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^8.3.2"
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "mocha": "^10.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "commonjs": true,
+      "es2021": true,
+      "es6": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": "standard",
+    "overrides": [
+      {
+        "files": [
+          "lib/*.js"
+        ]
+      }
+    ],
+    "ignorePatterns": [
+      "lib/stackexchange/*"
+    ],
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
+    "rules": {}
   }
 }
