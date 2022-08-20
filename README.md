@@ -1,6 +1,6 @@
 # how2: stackoverflow from the terminal
 
-[![NPM Version](https://nodei.co/npm/how-2.png?downloads=true)](https://npmjs.org/package/how-2)
+[![NPM Version](https://nodei.co/npm/how2.png?downloads=true)](https://npmjs.org/package/how2)
 
 how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language:
@@ -11,9 +11,9 @@ It's like `man`, but you can query it in natural language:
 ## Install
 You can install it via npm:
 
-`npm install -g how-2`
+`npm install -g how2`
 
-if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how-2` if you don't care.
+if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care.
 
 ## Usage
 If you don't specify a language **it defaults to Bash** unix command line.
