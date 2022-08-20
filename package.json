@@ -1,7 +1,7 @@
 {
-  "name": "how-2",
+  "name": "how2",
   "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "Uses Google and Stackoverflow to find how to do things on a Unix command line",
   "license": "MIT",
   "repository": {
@@ -46,6 +46,7 @@
     "lint": " eslint --fix ."
   },
   "dependencies": {
+    "ansi-regex": "^6.0.1",
     "axios": "^0.21.4",
     "blessed": "^0.1.81",
     "colors": "^1.4.0",
