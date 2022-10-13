@@ -1,19 +1,35 @@
-# how2: stackoverflow from the terminal
-
-[![NPM Version](https://nodei.co/npm/how2.png?downloads=true)](https://npmjs.org/package/how2)
+# how2: AI for your terminal
 
 how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language:
 
-![Demo of using how2](https://raw.githubusercontent.com/santinic/how2/master/img/demo.gif)
+https://s3.amazonaws.com/how2terminal.com/v5.mp4
+
+# Install
+* **With NPM**
+
+    `npm install -g how2`
+
+    if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care.
 
 
-## Install
-You can install it via npm:
+* **MacOSX (via HowBrew)**
 
-`npm install -g how2`
+    `brew tap how2terminal/how2`
 
-if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care.
+    `brew install how2`
+
+
+* **Ubuntu/Debian**
+
+    [Download latest .deb](https://github.com/santinic/how2/releases/latest/how2.deb) and then run:
+
+    `sudo dpkg i how2.deb`
+
+* **Binaries**
+    
+    [Go to the latest release](https://github.com/santinic/how2/releases/latest) and download the binaries.
+
 
 ## Usage
 If you don't specify a language **it defaults to Bash** unix command line.
@@ -45,15 +61,3 @@ Yes, you need to use `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
 For example, you could alias the proxy seetings in your `~/.bash_profile`:
 
 `alias how2="HTTPS_PROXY='your_proxy:8888' how2"`
-
-## How does it work?
-It uses Google and Stackoverflow APIs, because Stackoverflow search on its own doesn't
-works as well.
-
-
-## Why?
-Because I can never remember how to do certain things. And reading man pages always takes too long.
-
-![XKCD](http://imgs.xkcd.com/comics/tar.png)
-
-Taken from https://xkcd.com/1168/
