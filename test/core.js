@@ -10,13 +10,13 @@ describe('core logic', () => {
     // Search
     const searchResults = await googleSearch(text, lang)
     console.log(searchResults)
-    assert.isAbove(searchResults.length, 5)
-    assert.include((searchResults.map(r => r.snippet).join(' | ')), 'bzip2 -d')
+    assert.isAbove(searchResults.length, 1)
+    assert.include((searchResults.map(r => r.snippet).join(' | ')), 'bzip')
 
     // Parse first link
     const parsedLink = utils.parseStackoverflowQuestionId(searchResults[0].link)
     console.log(parsedLink)
-    assert.equal(parsedLink.site, 'superuser')
+    assert.equal(parsedLink.hostname, 'superuser.com')
     assert.isDefined(parsedLink.questionId)
 
     // First result title contains at least .bz2
@@ -30,13 +30,13 @@ describe('core logic', () => {
     // Search
     const searchResults = await googleSearch(text, lang)
     // console.log(searchResults)
-    assert.isAbove(searchResults.length, 5)
+    assert.isAbove(searchResults.length, 1)
     assert.include((searchResults.map(r => r.snippet).join(' | ')), 'itertools')
 
     // Parse first link
     const parsedLink = utils.parseStackoverflowQuestionId(searchResults[0].link)
     // console.log(parsedLink)
-    assert.equal(parsedLink.site, 'stackoverflow')
+    assert.equal(parsedLink.hostname, 'stackoverflow.com')
     assert.isDefined(parsedLink.questionId)
   })
 })

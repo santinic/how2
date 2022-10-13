@@ -1,8 +1,12 @@
 {
   "name": "how2",
-  "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
-  "version": "1.9.5",
-  "description": "Uses Google and Stackoverflow to find how to do things on a Unix command line",
+  "author": {
+    "name": "Claudio Santini",
+    "email": "hireclaudio@gmail.com"
+  },
+  "homepage": "https://github.com/santinic/how2/",
+  "version": "3.0.0",
+  "description": "AI for your terminal. Uses Google and Stackoverflow to find how to do things on a Unix command line.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,27 +18,6 @@
       "email": "paolocifa@gmail.com"
     }
   ],
-  "keywords": [
-    "how2",
-    "howto",
-    "man",
-    "google",
-    "stackoverflow",
-    "stack overflow",
-    "stackexchange",
-    "stack exchange"
-  ],
-  "tags": [
-    "how2",
-    "howto",
-    "man",
-    "google",
-    "stackoverflow",
-    "stack overflow",
-    "stackexchange",
-    "stack exchange"
-  ],
-  "homepage": "https://github.com/santinic/how2/",
   "preferGlobal": true,
   "main": "./index.js",
   "bin": {
@@ -42,37 +25,59 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "./bin/how2 concatenate two files",
-    "lint": " eslint --fix ."
+    "start": "./bin/how2",
+    "lint": " eslint --fix .",
+    "pkg": "pkg package.json",
+    "man": "pandoc doc/how2.1.md -s -t man > doc/how2.man && man ./doc/how2.man"
+  },
+  "pkg": {
+    "scripts": "build.js",
+    "targets": [
+      "node14-linux",
+      "node14-macos",
+      "node14-win",
+      "node14-macos-arm64"
+    ],
+    "outputPath": "dist/binaries"
+  },
+  "node_deb": {
+    "version": "3.0.0",
+    "init": "none",
+    "entrypoints": {
+      "cli": "lib/index.js"
+    }
   },
   "dependencies": {
-    "ansi-regex": "^6.0.1",
     "axios": "^0.21.4",
     "blessed": "^0.1.81",
     "colors": "^1.4.0",
     "ent": "^2.2.0",
     "google-it": "^1.6.3",
+    "inquirer": "^8.2.4",
     "keypress": "^0.2.1",
     "lodash": "^4.17.21",
-    "marked": "^4.0.18",
+    "marked": "^4.1.0",
     "marked-terminal": "^1.6.1",
-    "nconf": "^0.12.0",
     "npm-latest": "^1.0.1",
     "openurl": "^1.1.1",
     "request": "^2.88.2",
     "semver": "5.1.0",
     "simple-spinner": "0.0.5",
-    "winston": "^3.8.1",
-    "yargs": "^16.2.0"
+    "winston": "^3.8.2",
+    "yargs": "^17.5.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "^8.22.0",
+    "eslint": "8.22.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.4",
-    "eslint-plugin-promise": "^6.0.0",
-    "mocha": "^10.0.0"
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "mocha": "^10.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -83,7 +88,9 @@
       "node": true,
       "jest": true
     },
-    "extends": "standard",
+    "extends": [
+      "standard"
+    ],
     "overrides": [
       {
         "files": [
@@ -97,6 +104,31 @@
     "parserOptions": {
       "ecmaVersion": "latest"
     },
-    "rules": {}
-  }
+    "rules": {
+      "new-cap": "off",
+      "n/no-callback-literal": "off"
+    }
+  },
+  "keywords": [
+    "how2",
+    "howto",
+    "man",
+    "stackoverflow",
+    "stack overflow",
+    "stackexchange",
+    "stack exchange",
+    "openai",
+    "codex"
+  ],
+  "tags": [
+    "how2",
+    "howto",
+    "man",
+    "stackoverflow",
+    "stack overflow",
+    "stackexchange",
+    "stack exchange",
+    "openai",
+    "codex"
+  ]
 }
