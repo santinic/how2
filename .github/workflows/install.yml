@@ -5,6 +5,9 @@ jobs:
   npm:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
       - run: npm i -g how2
       - run: how2
       - run: how2 decompress tar gz
@@ -17,7 +20,18 @@ jobs:
       - run: how2 decompress tar gz
   brew-tap:
     runs-on: macos-12
+    steps:
       - run: brew tap how2terminal/how2
       - run: brew install how2
       - run: how2
       - run: how2 decompress tar gz
+  windows:
+    runs-on: windows-latest
+    shell: pwsh
+    steps:
+      - run: |
+          $WebClient = New-Object System.Net.WebClient
+          $WebClient.DownloadFile("https://github.com/santinic/how2/releases/download/latest/how2-win.zip", "C:\")
+          Expand-Archive -Path C:\how2-win.zip C:\
+      - run: .\how2
+      - run: .\how2 Download file # meta ;)
