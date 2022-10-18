@@ -45,7 +45,7 @@ By default, how2 uses an external AI server to find the best unix command line s
 
 If you add the `-s` option instead, it will search StackOverflow for an answer:
 
-[!how2 AI and StackOverflow mode](https://raw.githubusercontent.com/santinic/how2/master/img/modes.png)
+![how2 AI and StackOverflow mode](https://raw.githubusercontent.com/santinic/how2/master/img/modes.png)
 
 If you have exhausted your daily AI quota (it goes by IP) it defaults to StackOverflow search:
 
