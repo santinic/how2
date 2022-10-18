@@ -29,9 +29,13 @@ jobs:
     runs-on: windows-latest
     shell: pwsh
     steps:
-      - run: |
+      - name: Download and decompress artifact
+        shell: pwsh
+        run: |
           $WebClient = New-Object System.Net.WebClient
           $WebClient.DownloadFile("https://github.com/santinic/how2/releases/download/latest/how2-win.zip", "C:\")
           Expand-Archive -Path C:\how2-win.zip C:\
-      - run: .\how2
-      - run: .\how2 Download file # meta ;)
+      - name: Without options
+        run: .\how2
+      - name: Simple search
+        run: .\how2 Download file # meta ;)
