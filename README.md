@@ -3,7 +3,9 @@
 how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language:
 
-https://s3.amazonaws.com/how2terminal.com/v5.mp4
+https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a441-7d0696a31452.mp4
+
+
 
 # Install
 * **With NPM**
