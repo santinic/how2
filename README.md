@@ -5,11 +5,7 @@ It's like `man`, but you can query it in natural language. It uses a mix of AI c
 
 It effectively replaces `Chrome => New Tab => Google => Click first result on StackOverflow => Scroll Down to first answer.`
 
-
-
 https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a441-7d0696a31452.mp4
-
-
 
 
 # Install
@@ -59,19 +55,6 @@ After that you can press SPACE to go to the interactive mode, where you can choo
 [//]: # (You can use `-l lang` to find answers for other languages:)
 [//]: # (![-l python]&#40;https://raw.githubusercontent.com/santinic/how2/master/img/python.png&#41;)
 
-## Copy-Paste with mouse
-When you are in "interactive mode" (after you press SPACE), if you want to copy-paste more than one line you can use block-select:
-
-**With Ubuntu try holding `Ctrl+Alt` before you select, or `Alt+Cmd` if you're in iTerm on Mac.**
-
-(thanks to @danielkop for this suggestion).
-
-## Can i use it behind Proxy ?
-Yes, you need to use `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
-
-For example, you could alias the proxy settings in your `~/.bash_profile`:
-
-`alias how2="HTTPS_PROXY='your_proxy:8888' how2"`
 
 ## How does it work?
 Behind the curtain, the API use a couple of AI code-completion models (Salesforce CodeGen) 
@@ -90,3 +73,18 @@ Sometimes, the model cannot find a solution and will result in unexpected output
 In that case, We suggest rewording your input, it often takes minor changes to get to a good solution.
 And, if it really doesn't work, just add `-s` to get the best result on StackOverflow straight into
 your Terminal.
+
+
+## Copy-Paste with mouse
+When you are in "interactive mode" (after you press SPACE), if you want to copy-paste more than one line you can use block-select:
+
+**With Ubuntu try holding `Ctrl+Alt` before you select, or `Alt+Cmd` if you're in iTerm on Mac.**
+
+(thanks to @danielkop for this suggestion).
+
+## Can i use it behind Proxy ?
+Yes, you need to use `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
+
+For example, you could alias the proxy settings in your `~/.bash_profile`:
+
+`alias how2="HTTPS_PROXY='your_proxy:8888' how2"`
