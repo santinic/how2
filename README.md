@@ -4,7 +4,7 @@
 how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language. It uses a mix of AI code-completion and StackOverflow search.
 
-It effectively replaces `Chrome => New Tab => Google => Click first result on StackOverflow => Scroll Down to first answer.`
+It effectively replaces Chrome => New Tab => Google => Click on StackOverflow => Scroll Down to first answer.
 
 *Work in progress 🚧 🚧 🚧 Updates coming soon*
 
