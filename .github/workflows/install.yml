@@ -1,0 +1,23 @@
+name: install
+run-name: Verify install on every OS works
+on: [push]
+jobs:
+  npm:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm i -g how2
+      - run: how2
+      - run: how2 decompress tar gz
+  deb:
+    runs-on: ubuntu-latest
+    steps:
+      - run: wget https://github.com/santinic/how2/releases/download/latest/how2.deb
+      - run: sudo dpkg -i how2.deb
+      - run: how2
+      - run: how2 decompress tar gz
+  brew-tap:
+    runs-on: macos-12
+      - run: brew tap how2terminal/how2
+      - run: brew install how2
+      - run: how2
+      - run: how2 decompress tar gz
