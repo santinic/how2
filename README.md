@@ -33,7 +33,8 @@ https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a4
     [Go to the latest release](https://github.com/santinic/how2/releases/latest) and download the binaries.
 
 
-## Usage
+
+# Usage
 If you don't specify a language **it defaults to Bash** unix command line.
 how2 tries to give you immediately the most likely answer:
 
