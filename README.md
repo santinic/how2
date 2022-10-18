@@ -1,9 +1,12 @@
 # how2: AI for your Terminal
 
+
 how2 finds the simplest way to do something in a unix shell.
 It's like `man`, but you can query it in natural language. It uses a mix of AI code-completion and StackOverflow search.
 
 It effectively replaces `Chrome => New Tab => Google => Click first result on StackOverflow => Scroll Down to first answer.`
+
+*Work in progress 🚧 🚧 🚧 Updates coming soon*
 
 https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a441-7d0696a31452.mp4
 
