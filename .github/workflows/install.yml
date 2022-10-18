@@ -27,7 +27,6 @@ jobs:
       - run: how2 decompress tar gz
   windows:
     runs-on: windows-latest
-    shell: pwsh
     steps:
       - name: Download and decompress artifact
         shell: pwsh
