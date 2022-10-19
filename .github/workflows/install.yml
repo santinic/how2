@@ -23,7 +23,9 @@ jobs:
       - uses: actions/checkout@master
       - id: ver
         uses: Saionaro/extract-package-version@v1.0.6
-      - run: wget https://github.com/santinic/how2/releases/download/${{ steps.ver.outputs.version }}/how2-linux-x64.tar.gz
+      - run: |
+          wget https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-linux-x64.tar.gz
+          wget https://github.com/santinic/how2/releases/download/v3.0.2/how2.deb
       - run: tar xvzg how2-linux-x64.tar.gz
       - run: mv how2-linux-x64.tar.gz how2
       - run: ./how2
@@ -38,9 +40,7 @@ jobs:
       - uses: actions/checkout@master
       - id: ver
         uses: Saionaro/extract-package-version@v1.0.6
-      - run: |
-          latest=`curl -s https://raw.githubusercontent.com/santinic/how2/master/package.json | jq -r '.version'`
-          wget https://github.com/santinic/how2/releases/download/$latest/how2-linux-x64.tar.gz
+      - run: wget https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-linux-x64.tar.gz
       - run: sudo dpkg -i how2.deb
       - run: how2
       - run: how2 decompress tar gz
@@ -63,11 +63,14 @@ jobs:
   windows:
     runs-on: windows-latest
     steps:
+      - uses: actions/checkout@master
+      - id: ver
+        uses: Saionaro/extract-package-version@v1.0.6
       - name: Download and decompress artifact
         shell: pwsh
         run: |
           $WebClient = New-Object System.Net.WebClient
-          $WebClient.DownloadFile("https://github.com/santinic/how2/releases/download/latest/how2-win.zip", "C:\")
+          $WebClient.DownloadFile("https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-win.zip", "C:\")
           Expand-Archive -Path C:\how2-win.zip C:\
       - name: Without options
         run: .\how2
