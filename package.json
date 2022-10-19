@@ -52,6 +52,7 @@
     "blessed": "^0.1.81",
     "colors": "^1.4.0",
     "ent": "^2.2.0",
+    "github-version-checker": "^2.3.0",
     "google-it": "^1.6.3",
     "inquirer": "^8.2.4",
     "keypress": "^0.2.1",

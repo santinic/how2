@@ -42,5 +42,21 @@ describe('bin', function () {
         done()
       })
     })
+    it('convert mov to mp4 with ffmpeg  -s', (done) => {
+      exec('./bin/how2 -s unzip tar.gz', (error, stdout, stderr) => {
+        assert.isNull(error)
+        console.log(stdout)
+        assert.include(stdout, 'ffmpeg')
+        done()
+      })
+    })
+    it('convert mov to mp4  -s', (done) => {
+      exec('./bin/how2 -s unzip tar.gz', (error, stdout, stderr) => {
+        assert.isNull(error)
+        console.log(stdout)
+        assert.include(stdout, 'ffmpeg')
+        done()
+      })
+    })
   })
 })
