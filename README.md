@@ -44,11 +44,9 @@ https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a4
 
 # Usage
 By default, how2 uses an external AI server to find the best unix command line suggestion.
-If you add the `-s` option instead, it will search StackOverflow for an answer:
+If you add the `-s` option instead, it will search StackOverflow for an answer.
 
 ![how2 AI and StackOverflow mode](https://raw.githubusercontent.com/santinic/how2/master/img/modes.png)
-
-If you have exhausted your daily AI quota (it goes by IP) it defaults to StackOverflow search.
 
 ![how2 -s example](https://raw.githubusercontent.com/santinic/how2/master/img/s.png)
 
