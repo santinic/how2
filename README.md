@@ -65,10 +65,9 @@ After that you can press SPACE to go to the interactive mode, where you can choo
 
 ## How does it work?
 Behind the curtain, the API use a couple of AI code-completion models (Salesforce CodeGen) 
-retrained on Bash/Powershell commands.
-This is just the beginning, 
-[we are looking for funding](https://how2terminal.com/invest) to build a much bigger thing.
-Currently, the AI mode is free for everybody: max 5 requests per day, 10 req / minute.
+retrained on Bash/Powershell commands. 
+This is just the beginning, we are working on retraining the models to focus on the Command-Line experience.
+Currently, the AI mode is free for everybody up to 5 requests per day. 
 If you are a professional user [consider upgrading to a paid subscription](https://how2terminal.com/pricing).
 
 
