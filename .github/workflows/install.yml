@@ -17,23 +17,6 @@ jobs:
       - run: |
           ver=`how2 --version`
           if [ $ver != ${{ steps.ver.outputs.version }} ]; then exit 1; fi
-  deb:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - id: ver
-        uses: Saionaro/extract-package-version@v1.0.6
-      - run: |
-          wget https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-linux-x64.tar.gz
-          wget https://github.com/santinic/how2/releases/download/v3.0.2/how2.deb
-      - run: tar xvzg how2-linux-x64.tar.gz
-      - run: mv how2-linux-x64.tar.gz how2
-      - run: ./how2
-      - run: how2 decompress tar gz
-      - run: |
-          ver=`how2 --version`
-          if [ $ver != ${{ steps.ver.outputs.version }} ]; then exit 1; fi
-      - run: man -P cat how2
   linux-binary:
     runs-on: ubuntu-latest
     steps:
@@ -41,6 +24,21 @@ jobs:
       - id: ver
         uses: Saionaro/extract-package-version@v1.0.6
       - run: wget https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-linux-x64.tar.gz
+      - run: tar xvzf how2-linux-x64.tar.gz
+      - run: mv how2-linux-x64.tar.gz how2
+      - run: ./how2
+      - run: ./how2 decompress tar gz
+      - run: |
+          ver=`./how2 --version`
+          if [ $ver != ${{ steps.ver.outputs.version }} ]; then exit 1; fi
+      - run: man -P cat how2
+  deb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - id: ver
+        uses: Saionaro/extract-package-version@v1.0.6
+      - run: wget https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2.deb
       - run: sudo dpkg -i how2.deb
       - run: how2
       - run: how2 decompress tar gz
