@@ -8,52 +8,58 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
+      - uses: actions/checkout@master
+      - id: ver
+        uses: Saionaro/extract-package-version@v1.0.6
       - run: npm i -g how2
       - run: how2
       - run: how2 decompress tar gz
       - run: |
           ver=`how2 --version`
-          echo $ver
-          latest=`curl -s https://raw.githubusercontent.com/santinic/how2/master/package.json | jq -r '.version'`
-          if [ $ver != $latest ]; then exit 1; fi
+          if [ $ver != ${{ steps.ver.outputs.version }} ]; then exit 1; fi
   deb:
     runs-on: ubuntu-latest
     steps:
-      - run: wget https://github.com/santinic/how2/releases/download/latest/how2-linux-x64.tar.gz
+      - uses: actions/checkout@master
+      - id: ver
+        uses: Saionaro/extract-package-version@v1.0.6
+      - run: wget https://github.com/santinic/how2/releases/download/${{ steps.ver.outputs.version }}/how2-linux-x64.tar.gz
       - run: tar xvzg how2-linux-x64.tar.gz
       - run: mv how2-linux-x64.tar.gz how2
       - run: ./how2
       - run: how2 decompress tar gz
       - run: |
           ver=`how2 --version`
-          echo $ver
-          latest=`curl -s https://raw.githubusercontent.com/santinic/how2/master/package.json | jq -r '.version'`
-          if [ $ver != $latest ]; then exit 1; fi
+          if [ $ver != ${{ steps.ver.outputs.version }} ]; then exit 1; fi
       - run: man -P cat how2
   linux-binary:
     runs-on: ubuntu-latest
     steps:
-      - run: wget https://github.com/santinic/how2/releases/download/latest/how2.deb
+      - uses: actions/checkout@master
+      - id: ver
+        uses: Saionaro/extract-package-version@v1.0.6
+      - run: |
+          latest=`curl -s https://raw.githubusercontent.com/santinic/how2/master/package.json | jq -r '.version'`
+          wget https://github.com/santinic/how2/releases/download/$latest/how2-linux-x64.tar.gz
       - run: sudo dpkg -i how2.deb
       - run: how2
       - run: how2 decompress tar gz
       - run: |
           ver=`how2 --version`
-          echo $ver
-          latest=`curl -s https://raw.githubusercontent.com/santinic/how2/master/package.json | jq -r '.version'`
           if [ $ver != $latest ]; then exit 1; fi
   brew-tap:
     runs-on: macos-12
     steps:
+      - uses: actions/checkout@master
+      - id: ver
+        uses: Saionaro/extract-package-version@v1.0.6
       - run: brew tap how2terminal/how2
       - run: brew install how2
       - run: how2
       - run: how2 decompress tar gz
       - run: |
           ver=`how2 --version`
-          echo $ver
-          latest=`curl -s https://raw.githubusercontent.com/santinic/how2/master/package.json | jq -r '.version'`
-          if [ $ver != $latest ]; then exit 1; fi
+          if [ $ver != ${{ steps.ver.outputs.version }} ]; then exit 1; fi
   windows:
     runs-on: windows-latest
     steps:
@@ -66,4 +72,4 @@ jobs:
       - name: Without options
         run: .\how2
       - name: Simple search
-        run: .\how2 Download file # meta ;)
+        run: .\how2 Download file
