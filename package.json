@@ -4,8 +4,8 @@
     "name": "Claudio Santini",
     "email": "hireclaudio@gmail.com"
   },
-  "homepage": "https://github.com/santinic/how2/",
-  "version": "3.0.1",
+  "homepage": "https://how2terminal.com",
+  "version": "3.0.2",
   "description": "AI for your terminal. Uses Google and Stackoverflow to find how to do things on a Unix command line.",
   "license": "MIT",
   "repository": {
@@ -41,7 +41,7 @@
     "outputPath": "dist/binaries"
   },
   "node_deb": {
-    "version": "3.0.1",
+    "version": "3.0.2",
     "init": "none",
     "entrypoints": {
       "cli": "lib/index.js"
