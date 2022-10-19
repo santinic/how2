@@ -25,7 +25,7 @@ jobs:
         uses: Saionaro/extract-package-version@v1.0.6
       - run: wget https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-linux-x64.tar.gz
       - run: tar xvzf how2-linux-x64.tar.gz
-      - run: mv how2-linux-x64.tar.gz how2
+      - run: mv how2-linux-x64 how2
       - run: ./how2
       - run: ./how2 decompress tar gz
       - run: |
@@ -67,8 +67,7 @@ jobs:
       - name: Download and decompress artifact
         shell: pwsh
         run: |
-          $WebClient = New-Object System.Net.WebClient
-          $WebClient.DownloadFile("https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-win.zip", "C:\")
+          wget "https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-win.zip"
           Expand-Archive -Path C:\how2-win.zip C:\
       - name: Without options
         run: .\how2
