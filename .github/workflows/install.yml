@@ -57,6 +57,7 @@ jobs:
       - run: how2 decompress tar gz
       - run: |
           ver=`how2 --version`
+          echo $ver
           if [ $ver != ${{ steps.ver.outputs.version }} ]; then exit 1; fi
   windows:
     runs-on: windows-latest
@@ -68,8 +69,8 @@ jobs:
         shell: pwsh
         run: |
           $WebClient = New-Object System.Net.WebClient
-          $WebClient.DownloadFile("https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-win.zip", "C:\")
-          Expand-Archive -Path C:\how2-win.zip C:\
+          $WebClient.DownloadFile("https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-win.zip", "C:\how2-win.zip")
+          Expand-Archive -Path C:\how2-win.zip C:\how2
       - name: Without options
         run: .\how2
       - name: Simple search
