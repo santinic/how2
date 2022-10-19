@@ -70,13 +70,11 @@ If you are a professional user [consider upgrading to a paid subscription](https
 
 
 ## How well does it work?
-How2 is surprisingly useful once you get used to it. 
-I have added it to our dev laptops
-and Linux servers, and it keeps saving me time.
+It is surprisingly useful once you get used to it! I've added it to all my servers and laptops and used it daily.
 Sometimes, the model cannot find a solution and will result in unexpected output. 
-In that case, We suggest rewording your input, it often takes minor changes to get to a good solution.
-And, if it really doesn't work, just add `-s` to get the best result on StackOverflow straight into
-your Terminal.
+In that case, try rewording your input, it often takes minor changes to get to a good solution.
+And, if it really doesn't work, just add `-s` to get the best answer on StackOverflow straight into
+the Terminal.
 
 
 ## Copy-Paste with mouse
