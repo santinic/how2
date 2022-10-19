@@ -8,6 +8,10 @@ It effectively replaces Chrome => New Tab => Google => Click on StackOverflow =>
 
 *Work in progress 🚧 🚧 🚧 Updates coming soon*
 
+![how2 AI for the Command-Line](https://raw.githubusercontent.com/santinic/how2/master/img/short.png)
+
+
+# Demo video
 https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a441-7d0696a31452.mp4
 
 
