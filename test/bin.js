@@ -33,7 +33,7 @@ describe('bin', function () {
       })
     })
     it('-s unzip tar.gz', (done) => {
-      exec('./bin/how2 -s unzip tar.gz', (error, stdout, stderr) => {
+      exec('./bin/how2 -s -p unzip tar.gz', (error, stdout, stderr) => {
         assert.isNull(error)
         console.log(stdout)
         assert.include(stdout, 'tar')
@@ -43,15 +43,7 @@ describe('bin', function () {
       })
     })
     it('convert mov to mp4 with ffmpeg  -s', (done) => {
-      exec('./bin/how2 -s unzip tar.gz', (error, stdout, stderr) => {
-        assert.isNull(error)
-        console.log(stdout)
-        assert.include(stdout, 'ffmpeg')
-        done()
-      })
-    })
-    it('convert mov to mp4  -s', (done) => {
-      exec('./bin/how2 -s unzip tar.gz', (error, stdout, stderr) => {
+      exec('./bin/how2 -s -p convert mov to mp4 with ffmpeg', (error, stdout, stderr) => {
         assert.isNull(error)
         console.log(stdout)
         assert.include(stdout, 'ffmpeg')
