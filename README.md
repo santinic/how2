@@ -31,13 +31,13 @@ https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a4
 
 * **Ubuntu/Debian:**
 
-    [Download latest .deb](https://github.com/santinic/how2/releases/latest/how2.deb) and then run:
+    [Download latest .deb](https://github.com/santinic/how2/releases/latest/) and then run:
 
     `sudo dpkg i how2.deb`
 
 * **Binaries:**
     
-    [Go to the latest release](https://github.com/santinic/how2/releases/latest) and download the binaries.
+    [Go to the latest release](https://github.com/santinic/how2/releases/latest/) and download the binaries.
 
 
 
