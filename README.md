@@ -44,11 +44,9 @@ https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a4
 
 # Usage
 By default, how2 uses an external AI server to find the best unix command line suggestion.
-If you add the `-s` option instead, it will search StackOverflow for an answer:
+If you add the `-s` option instead, it will search StackOverflow for an answer.
 
 ![how2 AI and StackOverflow mode](https://raw.githubusercontent.com/santinic/how2/master/img/modes.png)
-
-If you have exhausted your daily AI quota (it goes by IP) it defaults to StackOverflow search.
 
 ![how2 -s example](https://raw.githubusercontent.com/santinic/how2/master/img/s.png)
 
@@ -65,21 +63,18 @@ After that you can press SPACE to go to the interactive mode, where you can choo
 
 ## How does it work?
 Behind the curtain, the API use a couple of AI code-completion models (Salesforce CodeGen) 
-retrained on Bash/Powershell commands.
-This is just the beginning, 
-[we are looking for funding](https://how2terminal.com/invest) to build a much bigger thing.
-Currently, the AI mode is free for everybody: max 5 requests per day, 10 req / minute.
+retrained on Bash/Powershell commands. 
+This is just the beginning, we are working on retraining the models to focus on the Command-Line experience.
+Currently, the AI mode is free for everybody up to 5 requests per day. 
 If you are a professional user [consider upgrading to a paid subscription](https://how2terminal.com/pricing).
 
 
 ## How well does it work?
-How2 is surprisingly useful once you get used to it. 
-I have added it to our dev laptops
-and Linux servers, and it keeps saving me time.
+It is surprisingly useful once you get used to it! I've added it to all my servers and laptops and used it daily.
 Sometimes, the model cannot find a solution and will result in unexpected output. 
-In that case, We suggest rewording your input, it often takes minor changes to get to a good solution.
-And, if it really doesn't work, just add `-s` to get the best result on StackOverflow straight into
-your Terminal.
+In that case, try rewording your input, it often takes minor changes to get to a good solution.
+And, if it really doesn't work, just add `-s` to get the best answer on StackOverflow straight into
+the Terminal.
 
 
 ## Copy-Paste with mouse
