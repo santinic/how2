@@ -16,29 +16,28 @@ https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a4
 
 
 # Install
-* **With NPM:**
-
-    `npm install -g how2`
-
-    if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care.
-
-
 * **MacOSX (via HowBrew):**
 
     `brew tap how2terminal/how2`
 
     `brew install how2`
 
+* **With NPM:**
+
+    `npm install -g how2`
+
+    if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care
+
 
 * **Ubuntu/Debian:**
 
-    [Download latest .deb](https://github.com/santinic/how2/releases/latest/how2.deb) and then run:
+    [Download latest .deb](https://github.com/santinic/how2/releases/latest/) and then run:
 
     `sudo dpkg i how2.deb`
 
 * **Binaries:**
     
-    [Go to the latest release](https://github.com/santinic/how2/releases/latest) and download the binaries.
+    [Go to the latest release](https://github.com/santinic/how2/releases/latest/) and download the binaries.
 
 
 
