@@ -5,7 +5,7 @@
     "email": "hireclaudio@gmail.com"
   },
   "homepage": "https://how2terminal.com",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "AI for your terminal. Uses Google and Stackoverflow to find how to do things on a Unix command line.",
   "license": "MIT",
   "repository": {
@@ -41,7 +41,7 @@
     "outputPath": "dist/binaries"
   },
   "node_deb": {
-    "version": "3.0.2",
+    "version": "3.0.3",
     "init": "none",
     "entrypoints": {
       "cli": "lib/index.js"
