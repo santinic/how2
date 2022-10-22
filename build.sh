@@ -4,8 +4,8 @@ webpack --config webpack.config.js  # Create build.js
 
 # Build binaries
 rm dist/binaries/*
-pkg build.js -o dist/binaries/how2 --targets=node14-linux,node14-macos,node14-macos-arm64 #,node16-win-x64
-pkg build.js -o dist/binaries/how2 --targets=node14-win-x64
+pkg build.js -o dist/binaries/how2 --targets=node18-linux,node18-macos,node18-macos-arm64 #,node16-win-x64
+pkg build.js -o dist/binaries/how2 --targets=node18-win-x64
 cd dist/binaries
 tar cvzf how2-linux-x64.tar.gz    how2-linux-x64
 tar cvzf how2-macos-x64.tar.gz    how2-macos-x64
