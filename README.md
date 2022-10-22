@@ -79,10 +79,10 @@ the Terminal.
 
 
 ## Copy-Paste with mouse
-When you are in "interactive mode" (after you press SPACE), if you want to copy-paste more than one line you can use block-select:
+When you are in "interactive mode" (after you press SPACE), if you want to copy-paste more than one line you can:
 
-**With Ubuntu try holding `Ctrl+Alt` before you select, or `Alt+Cmd` if you're in iTerm on Mac.**
-
+- press "p" to just print out the selected answer (easier to copy-paste)
+- use block-select: With Ubuntu try holding `Ctrl+Alt` before you select, or `Alt+Cmd` if you're in iTerm on Mac
 (thanks to @danielkop for this suggestion).
 
 ## Can I use it behind Proxy ?
