@@ -25,5 +25,6 @@ sha256sum how2-macos-x64.tar.gz
 sha256sum how2-macos-arm64.tar.gz
 
 ls -lah
+open ../release
 
 # brew audit --strict --new-formula --online <formula>

@@ -71,7 +71,7 @@ If you are a professional user [consider upgrading to a paid subscription](https
 
 
 ## How well does it work?
-It is surprisingly useful once you get used to it! I've added it to all my servers and laptops and used it daily.
+It is surprisingly useful once you get used to it! I've added it to all my servers and laptops and I use it daily.
 Sometimes, the model cannot find a solution and will result in unexpected output. 
 In that case, try rewording your input, it often takes minor changes to get to a good solution.
 And, if it really doesn't work, just add `-s` to get the best answer on StackOverflow straight into
@@ -85,7 +85,7 @@ When you are in "interactive mode" (after you press SPACE), if you want to copy-
 
 (thanks to @danielkop for this suggestion).
 
-## Can i use it behind Proxy ?
+## Can I use it behind Proxy ?
 Yes, you need to use `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
 
 For example, you could alias the proxy settings in your `~/.bash_profile`:
