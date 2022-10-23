@@ -16,31 +16,40 @@ Go to [how2terminal.com](https://how2terminal.com) for more info
 # Demo video
 https://user-images.githubusercontent.com/179558/196452157-60e6b33a-116d-46f2-a441-7d0696a31452.mp4
 
+<br/><br/>
 
 # Install
-* **MacOSX (via HowBrew):**
+## MacOSX (via HowBrew):
 
-    `brew tap how2terminal/how2`
+```
+brew tap how2terminal/how2
+brew install how2
+```
 
-    `brew install how2`
+## With NPM:
 
-* **With NPM:**
+```
+sudo npm install -g how2
+```
 
-    `npm install -g how2`
-
-    if it gives you EACCES errors, [you need to fix npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). Or you can just use `sudo npm install -g how2` if you don't care
+If you install it without `sudo`, then you have to run it with `npx how2` or alias the command manually.
 
 
-* **Ubuntu/Debian:**
+## Ubuntu/Debian:
 
-    [Download latest .deb](https://github.com/santinic/how2/releases/latest/) and then run:
-
-    `sudo dpkg i how2.deb`
-
-* **Binaries:**
+[Download latest .deb](https://github.com/santinic/how2/releases/latest/) and then run:
     
-    [Go to the latest release](https://github.com/santinic/how2/releases/latest/) and download the binaries.
 
+```
+sudo dpkg -i how2.deb
+```
+
+## Binaries:
+    
+[Go to the latest release](https://github.com/santinic/how2/releases/latest/) and download the binaries.
+
+
+<br/><br/>
 
 
 # Usage
