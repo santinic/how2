@@ -3,3 +3,9 @@ node_modules
 .idea
 img
 *.gif
+dist
+build.js
+build.sh
+webpack.config.js
+doc
+test
