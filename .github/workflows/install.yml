@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@master
       - id: ver
         uses: Saionaro/extract-package-version@v1.0.6
-      - run: wget https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2.deb
+      - run: wget how2terminal.com/how2.deb
       - run: sudo dpkg -i how2.deb
       - run: how2
       - run: how2 decompress tar gz
