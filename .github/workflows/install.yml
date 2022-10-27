@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
       - uses: actions/checkout@master
       - id: ver
         uses: Saionaro/extract-package-version@v1.0.6
@@ -78,9 +78,10 @@ jobs:
           $WebClient = New-Object System.Net.WebClient
           $WebClient.DownloadFile("https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-win.zip", "how2-win.zip")
           Expand-Archive -Path .\how2-win.zip .
+      - run: mv how2-win.exe how2.exe
       - name: Without options
-        run: .\how2-win
+        run: .\how2
       - name: Simple search
-        run: .\how2-win Download file
-      - run: .\how2-win --set-token 8b2fee4d-95g3-4e35-b8ea-edede6500533
-      - run: .\how2-win --get-token
+        run: .\how2 Download file
+      - run: .\how2 --set-token 8b2fee4d-95g3-4e35-b8ea-edede6500533
+      - run: .\how2 --get-token
