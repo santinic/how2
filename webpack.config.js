@@ -8,7 +8,7 @@ module.exports = {
     node: true
   },
   output: {
-    filename: 'build.js',
+    filename: 'dist/build.js',
     path: __dirname
   },
   optimization: {
