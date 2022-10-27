@@ -15,8 +15,8 @@ mv *.tar.gz ../release
 mv *.zip ../release
 
 # Sign Apple Silicon binary
+codesign -vvvvv -s MMJ44P3H29 how2-macos-arm64
 chmod +x how2-macos-arm64
-codesign -s - -f -vvvvvvv --arch arm64 how2-macos-arm64
 
 # Build .deb
 cd ../deb
@@ -32,3 +32,5 @@ ls -lah
 open ../release
 
 # brew audit --strict --new-formula --online <formula>
+
+
