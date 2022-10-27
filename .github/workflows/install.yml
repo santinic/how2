@@ -79,8 +79,8 @@ jobs:
           $WebClient.DownloadFile("https://github.com/santinic/how2/releases/download/v${{ steps.ver.outputs.version }}/how2-win.zip", "how2-win.zip")
           Expand-Archive -Path .\how2-win.zip .
       - name: Without options
-        run: .\how2
+        run: .\how2-win
       - name: Simple search
-        run: .\how2 Download file
-      - run: .\how2 --set-token 8b2fee4d-95g3-4e35-b8ea-edede6500533
-      - run: .\how2 --get-token
+        run: .\how2-win Download file
+      - run: .\how2-win --set-token 8b2fee4d-95g3-4e35-b8ea-edede6500533
+      - run: .\how2-win --get-token
