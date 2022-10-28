@@ -6,9 +6,7 @@ It's like `man`, but you can query it in natural language. It uses a mix of AI c
 
 It effectively replaces Chrome => New Tab => Google => Click on StackOverflow => Scroll Down to first answer.
 
-*Work in progress 🚧 🚧 🚧 Updates coming soon*
-
-Go to [how2terminal.com](https://how2terminal.com) for more info
+Go to [how2terminal.com](https://how2terminal.com) for more info.
 
 ![how2 AI for the Command-Line](https://raw.githubusercontent.com/santinic/how2/master/img/short2.png)
 
@@ -41,6 +39,7 @@ If you install it without `sudo`, then you have to run it with `npx how2` or ali
     
 
 ```
+wget how2terminal.com/how2.deb
 sudo dpkg -i how2.deb
 ```
 
@@ -72,7 +71,7 @@ After that you can press SPACE to go to the interactive mode, where you can choo
 
 
 ## How does it work?
-Behind the curtain, the API use a couple of AI code-completion models (Salesforce CodeGen) 
+Behind the curtain, the API use a couple of AI code-completion models
 retrained on Bash/Powershell commands. 
 This is just the beginning, we are working on retraining the models to focus on the Command-Line experience.
 Currently, the AI mode is free for everybody up to 5 requests per day. 
